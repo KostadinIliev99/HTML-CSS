@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>API REQUEST</title>
+</head>
+<body>
+    <div class="row">
+        <div class="container col-4" id="box1">
+            <h2 class="p-3">Filters</h2>
+            <div class="row p-3">
+                <h4 class="">Chose your category</h4>
+                <div class="row p-3 ms-2">
+                    <div class="col-1">
+                        <input type="checkbox" class="category form-check-input" value="cat1">
+                        <input type="checkbox" class="category form-check-input" value="cat2">
+                        <input type="checkbox" class="category form-check-input" value="cat3">
+                    </div>
+                    <div class="col-4">
+                        <label for="cat1">Category 1</label>
+                        <label for="cat2">Category 2</label>
+                        <label for="cat3">Category 3</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-3">
+                <h4>Price</h4>
+                <div>
+                    <input type="number" placeholder="From..." class="form-control w-50" id="startPrice" min="0">
+                    <input type="number" placeholder="To..." class="mt-3 form-control w-50" id="endPrice" min="0">
+                </div>
+            </div>
+            <button class="btn btn-success w-25 ms-5" id="search" onclick="seacrhCat()">Search</button>
+        </div>
+        <div class="col-8" id="box2">
+
+        </div>
+    </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        let catArr = [];
+
+
+        function showCat(response) {
+            let html = '<table class="table table-bordered">';
+                    html += '<tr class="row">';
+                    html += '<td class="col-6 text-center">Name</td>';
+                    html += '<td class="col-2 text-center">Category</td>';
+                    html += '<td class="col-2 text-center">Price</td>';
+                    html += '<td class="col-2 text-center">Quantity</td>';
+                    html += '</tr>';
+                    
+                    response.forEach(val => {
+                        html += '<tr class="row">';
+                        html += `<td class="col-6"> ${val.name} </td>`;
+                        html += `<td class="col-2"> ${val.category} </td>`;
+                        html += `<td class="col-2"> ${val.price} </td>`;
+                        html += `<td class="col-2"> ${val.quantity} </td>`;
+                        html += '</tr>';
+                    });
+                    html += '</table>';
+                    $('#box2').html(html);
+        };
+
+
+        function loadCat() {
+            $.ajax({
+                url: ' http://blacatzacademy.com/api/products',
+                type: 'GET',
+                success: function(response) {
+                    catArr= response;
+                    showCat(catArr);
+                }
+            });
+        };
+
+
+        function seacrhCat() {
+            let startPrice = parseInt($('#startPrice').val());
+            let endPrice = parseInt($('#endPrice').val());
+            let newCatArr = [];
+            
+            $('.category').each(function(key, i) {
+                if ($(i).is(':checked') === true) {
+                    newCatArr.push($(i).val());
+                }
+            });
+
+            let filteredCat = catArr.filter( cat => {
+
+                if (startPrice >= 0 && cat.price < startPrice) {
+                    return false;
+                }
+
+                if (endPrice >= 0 && cat.price > endPrice) {
+                    return false;
+                }
+
+                if (newCatArr.length > 0 && !newCatArr.includes(cat.category)) {
+                    return false;
+                }
+
+                return true;
+            });
+            console.log(newCatArr);
+            showCat(filteredCat);
+        };
+
+         
+        $(function () {
+            loadCat();
+        });
+
+    </script>
+</body>
+</html>
