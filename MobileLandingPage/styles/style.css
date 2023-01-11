@@ -1,0 +1,321 @@
+body,h1,h2,h3,h3,h4,h5,p{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*HEADER START*/
+
+.header{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(25, 135, 84);
+}
+.logo{
+    float: left;
+    color: white;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px;
+}
+.bar button{
+    background-color: rgb(25, 135, 84);
+    border: none;
+    float: right;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+}
+.bar button i{
+    font-size: 35px;
+}
+.nav {
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    display: none;
+}
+
+.nav a {
+    display: block;
+    background-color: rgb(25, 135, 84);
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 12px;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav a i {
+    float: right;
+    font-size: 25px;
+}
+.home-page{
+    background-image: url('/MobileLandingPage/images/header.jpg');
+    background-position: bottom center;
+    background-size: cover;
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+}
+.header-elements{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 55px;
+    height: 300px;
+}
+.header-elements h1,.header-elements h3 {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+.header-elements h1{
+    font-size: 60px;
+    padding-top: 20px;
+}
+.header-elements h3 {
+    font-style: italic;
+    font-size: 25px;
+}
+.header-elements button{
+    text-align: center;
+    width: 115px;
+    height: 50px;
+    background-color: rgb(25, 135, 84);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.padd-top{
+    padding-top: 80px;
+}
+
+/*HEADER END*/
+
+/*MAIN START*/
+.section-one{
+    width: 100%;
+    height: 300px;
+}
+.section-one-inner{
+    text-align: center;
+    padding: 15px;
+    margin-top: 75px;
+}
+.section-one-inner h3{
+    color: rgb(25, 135, 84);
+    font-size: 27px;
+    text-shadow: 0.5px 0.5px black;
+    font-weight: 600;
+}
+.section-one-inner h5{
+    color: gray;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.section-one-inner button{
+    margin-top: 45px;
+    font-size: 15px;
+    background-color: rgb(25, 135, 84);
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.section-two{
+    background-color: rgb(25, 135, 84);
+    width: 100%;
+    height: 900px;
+    text-align: center;
+}
+.section-two-inner{
+    padding-top: 75px;
+}
+.section-two-inner h6{
+    font-size: 15px;
+}
+.section-two-inner h2{
+    font-size: 45px;
+}
+.section-two h6,.section-two h2{
+    text-transform: uppercase;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 1px 1px black;
+}
+.section-two-table button{
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+}
+.section-two-table tr td button i{
+    font-size: 20px;
+    color: white;
+    text-shadow: -1.5px 0 rgb(25,129,161),
+                    0 2px rgb(25,129,161), 
+                    2px 0 rgb(25,129,161), 
+                    0 -1.5px rgb(25,129,161);  
+}
+.section-two-table table{
+    width: 80%;
+    margin: 5% 10% auto;
+   
+}
+.section-two-table table td, .section-two-table tr{
+    color: white;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 10px;
+    display: inline-block;
+
+}
+.section-two-table table td{
+    width: 55%;
+}
+.section-three{
+    background-image: url("/MobileLandingPage/images/beach.jpg");
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.section-three-inner{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    text-shadow: 1px 1px black;
+    padding: 180px 10px 0 10px;
+}
+.btn-green{
+    margin-top: 45px;
+    font-size: 15px;
+    background-color: rgb(25, 135, 84);
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.section-four{
+    width: 100%;
+    height: 1350px;
+}
+.section-four div h3{
+    color: rgb(25, 135, 84);
+    text-shadow: 1px 0.5px black;
+    padding-top: 100px;
+    font-size: 45px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.section-four table{
+    width: 90%;
+    margin: 0 5% auto;
+}
+.section-four table td{
+    display: block;
+    margin-top: 15px;
+}
+.first-img{
+    background-image: linear-gradient(rgba(68, 67, 67, 0.588),rgba(0, 0, 0, 0.5)), url("/MobileLandingPage/images/1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 225px;
+}
+.second-img{
+    background-image: linear-gradient(rgba(68, 67, 67, 0.588),rgba(0, 0, 0, 0.5)), url("/MobileLandingPage/images/2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 225px;
+}
+.third-img{
+    background-image: linear-gradient(rgba(68, 67, 67, 0.588),rgba(0, 0, 0, 0.5)), url('/LandingPage/images/3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 225px;
+}
+.fourth-img{
+    background-image:linear-gradient(rgba(68, 67, 67, 0.588),rgba(0, 0, 0, 0.5)), url("/LandingPage/images/4.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 225px;
+}
+.first-p{
+    text-transform: uppercase;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+.second-p{
+    font-size: 15px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 10px;
+}
+.p-inners {
+    padding: 135px 0 0 50px;
+}
+.section-five{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(25, 135, 84);
+    text-align: center;
+}
+.section-five h2{
+    color: white;
+    text-shadow: 1px 1px black;
+    padding-top: 110px;
+    font-size: 35px;
+}
+.section-five button{
+    height: 40px;
+    margin: 10px;
+}
+.btn-inner{
+    padding-top: 15px;
+}
+.call-us{
+    width: 140px;
+}
+
+/*MAIN END*/
+
+.footer{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+.footer button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(25, 135, 84);
+    border: none;
+    margin: 5px;
+}
+.footer button i{
+    font-size: 25px;
+    color: white;
+}
+.footer-inner{
+    padding-top: 80px;
+}
+.footer-inner p{
+    padding-top: 70px;
+    color: gray;
+    font-size: 15px;
+}
+/*FOOTER END*/

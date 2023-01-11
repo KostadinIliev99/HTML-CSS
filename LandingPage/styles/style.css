@@ -1,0 +1,285 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,tr,td{
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER START*/
+
+.header{
+    background-image: url("/LandingPage/images/header.jpg");
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    min-height: 700px;
+    width: 100%;
+}
+.nav{
+   text-align: center;
+   padding-top: 10px;
+}
+.nav ul{
+    list-style-type: none;
+    padding: 9px;
+    width: 30%;
+    margin: 0 34% auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+.nav ul li{
+    display: inline-block;
+    padding: 5px;
+    font-size: 22px;
+}
+.nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.header-elements{
+    width: 60%;
+    margin: 10% 19% auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 25px;
+}
+.header-elements div h1,h3 {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+.header-elements div h1{
+    font-size: 60px;
+}
+.header-elements div h3 {
+    font-style: italic;
+}
+.header-elements button{
+    text-align: center;
+    width: 115px;
+    height: 50px;
+    background-color: rgb(25, 135, 84);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*HEADER END*/
+
+/*MAIN START*/
+
+.section-one{
+    width: 100%;
+    height: 300px;
+}
+.section-one-inner{
+    text-align: center;
+    padding-top: 75px;
+}
+.section-one-inner h3{
+    color: rgb(25, 135, 84);
+    font-size: 25px;
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+}
+.section-one-inner h5{
+    color: gray;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 10px;
+}
+.section-one-inner button{
+    margin-top: 45px;
+    font-size: 15px;
+    background-color: rgb(25, 135, 84);
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.section-two{
+    background-color: rgb(25, 135, 84);
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+.section-two-inner{
+    padding-top: 75px;
+}
+.section-two-inner h6{
+    font-size: 15px;
+}
+.section-two-inner h2{
+    font-size: 35px;
+}
+.section-two h6,.section-two h2{
+    text-transform: uppercase;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 1px 1px black;
+}
+.section-two-table button{
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+}
+.section-two-table tr td button i{
+    font-size: 20px;
+    color: white;
+    text-shadow: -1.5px 0 rgb(25,129,161),
+                    0 2px rgb(25,129,161), 
+                    2px 0 rgb(25,129,161), 
+                    0 -1.5px rgb(25,129,161);  
+}
+.section-two-table table{
+    width: 60%;
+    margin: 5% 20% auto;
+}
+.section-two-table table td{
+    width: 25%;
+    color: white;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 10px;
+}
+.section-three{
+    background-image: url("/LandingPage/images/beach.jpg");
+    width: 100%;
+    height: 500px;
+    background-position: bottom center;
+    background-size: cover;
+    
+}
+.section-three-inner{
+    text-align: center;
+    padding-top: 180px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.clear-fix{
+    clear: both;
+}
+.btn-green{
+    margin-top: 45px;
+    font-size: 15px;
+    background-color: rgb(25, 135, 84);
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.section-four{
+    width: 100%;
+    height: 1000px;
+}
+.section-four div h3{
+    color: rgb(25, 135, 84);
+    text-shadow: 1px 1px black;
+    padding-top: 100px;
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+.section-four table{
+    width: 70%;
+    margin: 0 15% auto;
+    border-collapse: collapse;
+}
+.first-img{
+    background-image: linear-gradient(rgba(68, 67, 67, 0.588),rgba(0, 0, 0, 0.5)), url("/LandingPage/images/1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 330px;
+}
+.second-img{
+    background-image: linear-gradient(rgba(68, 67, 67, 0.588),rgba(0, 0, 0, 0.5)), url("/LandingPage/images/2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 330px;
+}
+.third-img{
+    background-image: linear-gradient(rgba(68, 67, 67, 0.588),rgba(0, 0, 0, 0.5)), url('/LandingPage/images/3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 330px;
+}
+.fourth-img{
+    background-image:linear-gradient(rgba(68, 67, 67, 0.588),rgba(0, 0, 0, 0.5)), url("/LandingPage/images/4.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 330px;
+}
+.first-p{
+    text-transform: uppercase;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+}
+.second-p{
+    font-size: 20px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.p-inners {
+    padding: 230px 0 0 50px;
+}
+.section-five{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(25, 135, 84);
+    text-align: center;
+}
+.section-five h2{
+    color: white;
+    text-shadow: 1px 1px black;
+    padding-top: 80px;
+}
+.section-five button{
+    height: 40px;
+    margin: 10px;
+}
+.btn-inner{
+    padding-top: 15px;
+}
+.call-us{
+    width: 140px;
+}
+
+/*MAIN END*/
+
+/*FOOTER START*/
+
+.footer{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+.footer button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(25, 135, 84);
+    border: none;
+    margin: 5px;
+}
+.footer button i{
+    font-size: 15px;
+    color: white;
+}
+.footer-inner{
+    padding-top: 100px;
+}
+.footer-inner p{
+    padding-top: 30px;
+    color: gray;
+    font-size: 10px;
+}
+/*FOOTER END*/
